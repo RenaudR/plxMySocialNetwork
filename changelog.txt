@@ -1,0 +1,19 @@
+### Version 1.2 (31/07/2013) ###
+- ajout d'un z-index à 9999 pour l'infobulle
+
+### Version 1.1 (13/11/2013) ###
+- correction des problèmes de titre avec Tweeter
+- refonte du code pour plus de clarté
+
+### Version 1.0 (13/11/2013) ###
+- version initiale
+
+### Version 1.0b (13/11/2013) ###
+- infobulle pour le nombre de commentaires
+
+### Version 1.0b (04/11/2013) ###
+- validation w3c
+- fichier css
+
+### Version 1.0b (29/10/2013) ###
+- version initiale
