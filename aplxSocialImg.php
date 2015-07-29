@@ -54,9 +54,8 @@
 			$title = str_replace(' ', '+',$title); // mise en forme
 			
 			/* Récupération de l'URL */
-			ob_start();
-			$plxShow->artUrl();
-			$url = ob_get_clean();
+			$url = "?article".$plxShow->artId();
+			$url = $plxShow->plxMotor->urlRewrite($url);
 			
 			/* Gestion du nombre de commentaires */
 			ob_start();
@@ -72,13 +71,13 @@
 						echo "<li><a class='comment' href='{$url}#comments'><span>{$nbcom}</span></a></li>";
 					}
 					// Google+
-					echo "<li><a class='gplus' href='https://plus.google.com/share?url={$url}' {$onclick}></a></li>";
+					echo "<li><a class='gplus' href='https://plus.google.com/share?url={$url}' {$onclick}><span>Partager sur Google+</span></a></li>";
 					// Facebook
-					echo "<li><a class='facebook' href='https://www.facebook.com/sharer/sharer.php?u={$url}' {$onclick}></a></li>";
+					echo "<li><a class='facebook' href='https://www.facebook.com/sharer/sharer.php?u={$url}' {$onclick}><span>Partager sur Facebook</span></a></li>";
 					// Twitter
-					echo "<li><a class='twitter' href='https://twitter.com/share?url={$url}&amp;text={$title}' {$onclick}></a></li>";
+					echo "<li><a class='twitter' href='https://twitter.com/share?url={$url}&amp;text={$title}' {$onclick}><span>Partager sur Twitter</span></a></li>";
 					// Linkedin
-					echo "<li><a class='linkedin' href='https://www.linkedin.com/shareArticle?mini=true&amp;url={$url}&amp;title={$title}' {$onclick}></a></li>";
+					echo "<li><a class='linkedin' href='https://www.linkedin.com/shareArticle?mini=true&amp;url={$url}&amp;title={$title}' {$onclick}><span>Partager sur LinkedIn</span></a></li>";
 				echo "</ul>";
 			echo "</div>";
 			
