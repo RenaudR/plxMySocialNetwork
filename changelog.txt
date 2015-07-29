@@ -1,5 +1,6 @@
 ### Version 1.3 (29/07/2015) ###
-- lien plus court basé sur l'ID de l'article
+- lien plus court basé sur l'ID
+- compter les commentaires que si actifs
 
 ### Version 1.2 (31/07/2013) ###
 - ajout d'un z-index à 9999 pour l'infobulle

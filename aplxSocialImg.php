@@ -57,17 +57,17 @@
 			$url = "?article".$plxShow->artId();
 			$url = $plxShow->plxMotor->urlRewrite($url);
 			
-			/* Gestion du nombre de commentaires */
-			ob_start();
-			$plxShow->artNbCom();
-			$nbcom = ob_get_clean();
-			$nbcom = strip_tags($nbcom);
-			
 			/* Affichage */
 			echo "<div class='social'>";
 				echo "<ul>";
 					// Commentaires (si actifs)
 					if($plxShow->plxMotor->plxRecord_arts->f('allow_com') AND $plxShow->plxMotor->aConf['allow_com']) {
+						/* Gestion du nombre de commentaires */
+						ob_start();
+						$plxShow->artNbCom();
+						$nbcom = ob_get_clean();
+						$nbcom = strip_tags($nbcom);
+						
 						echo "<li><a class='comment' href='{$url}#comments'><span>{$nbcom}</span></a></li>";
 					}
 					// Google+
