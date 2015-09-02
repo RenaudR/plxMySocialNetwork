@@ -34,16 +34,6 @@
 .social li a.linkedin		{	background-position: -128px 0px;	}
 .social li a.linkedin:hover {	background-position: -128px -32px;	}
 
-
-.social ul li a:hover,
-.social ul li a:focus {
-	background: rgba(0,0,0,.4);
-	/*box-shadow*/
-	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.4);
-	   -moz-box-shadow: 0 1px 0 rgba(255,255,255,.4);
-			box-shadow: 0 1px 0 rgba(255,255,255,.4);
-	outline:none;
-}
 .social ul li a span {
 	z-index: 9999;
 	color: white;
