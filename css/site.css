@@ -20,6 +20,10 @@ text-decoration:none;
 
 }
 
+.social-network li a:hover{
+color: #555;
+font-weight:bold;}
+
 .social-network 
 span
 {
