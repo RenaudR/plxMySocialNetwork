@@ -3,7 +3,6 @@ plxMySocialNetwork (fork de aplxSocialImg) : partager vos articles sur les rése
 
 ![demo](https://cloud.githubusercontent.com/assets/13441278/9706319/b5f568d8-54e1-11e5-96f4-160addcb4c44.png)
 
-![icon](https://cloud.githubusercontent.com/assets/13441278/9706299/84f5fdc4-54e1-11e5-96ef-d5ad697a1e32.png)
 
 ## Fonctionnalités
 
@@ -37,3 +36,4 @@ Paramètres > Plugins > menu "Plugins actifs" > plugin "MySocialNetwork" > menu 
 * activer / désactiver certains réseaux sociaux
 * ajouter des réseaux sociaux directement depuis le panneau de configuration
 
+![icon](https://cloud.githubusercontent.com/assets/13441278/9706299/84f5fdc4-54e1-11e5-96ef-d5ad697a1e32.png)
