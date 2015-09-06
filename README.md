@@ -2,7 +2,9 @@
 plxMySocialNetwork (fork de aplxSocialImg) : partager vos articles sur les réseaux sociaux
 
 ![demo](https://cloud.githubusercontent.com/assets/13441278/9706319/b5f568d8-54e1-11e5-96f4-160addcb4c44.png)
+
 ![icon](https://cloud.githubusercontent.com/assets/13441278/9706299/84f5fdc4-54e1-11e5-96ef-d5ad697a1e32.png)
+
 ## Fonctionnalités
 
 * Affiche un lien pour partager un article sur les réseaux sociaux
