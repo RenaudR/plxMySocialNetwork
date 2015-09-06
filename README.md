@@ -1,20 +1,32 @@
-# aplxSocialImg
-aplxSocialImg (fork de SocialButtons) : Images de partage sur quelques sociaux
+# Plugin plxMySocialNetwork pour PluXml
+plxMySocialNetwork (fork de aplxSocialImg) : partager vos articles sur les réseaux sociaux
 
-## Ce que ça fait
-- une seule et unique image pour les RS
-- effet de survol sur les images
-- personnalisations de l'affichage en CSS
-- image pour : commentaires, google+, facebook, twitter et linkedin
-- style défini dans un fichier css
-- valide html5 par le w3c
-- infobulle sur l'image des commentaires (pour le nombre)
+## Fonctionnalités
 
-## Le rendu
-Voilà en gros ce que ça donne (installez-le pour voir réellement la différence avec SocialButtons) :
-![Démo](https://github.com/aruhuno/aplxSocialImg/blob/master/demo.png)
+* Affiche un lien pour partager un article sur les réseaux sociaux
+* Réseaux sociaux: Facebook, Twitter, Google+, LinkedIn, Diaspora et Courriel
+* Partager les articles et/ou les pages statiques
+* Affichage des liens en texte ou boutons via font-awesome (à valider dans les paramètres)
+* Pas de code tiers
 
-## Remerciements
-- websyys pour m'avoir lancer dans la réalisation de ce plugin
-- L'équipe de PluXml pour la documentation très bien fournie
-- Stéphane pour son plugin [MySocialButtons](http://forum.pluxml.org/viewtopic.php?id=2924) qui m'a servit de base
+
+## Ajouter plxMySocialNetwork
+
+Pour ajouter les boutons dans votre page, éditer les fichiers depuis *Options d'affichage* > *Choix du thème* > *  Éditer les fichiers du thème «defaut»*
+
+Sur une page statique (static.php ou static-full-width.php) ajouter la ligne suivante à l'endroit où vous souhaitez afficher les boutons.
+
+    <?php eval($plxShow->callHook('MySocialNetworkStatic')) ?>
+    
+Sur une page article (article.php ou article-full-width.php) ajouter la ligne suivante à l'endroit où vous souhaitez afficher les boutons.
+
+    <?php eval($plxShow->callHook('MySocialNetworkArticle')) ?>
+
+
+## Modifier le CSS
+
+Paramètres > Plugins > menu "Plugins actifs" > plugin "MySocialNetwork" > menu "Code css" > champ "Contenu fichier css site"
+  
+
+
+
