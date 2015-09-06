@@ -27,6 +27,9 @@ Sur une page article (article.php ou article-full-width.php) ajouter la ligne su
 
 Paramètres > Plugins > menu "Plugins actifs" > plugin "MySocialNetwork" > menu "Code css" > champ "Contenu fichier css site"
   
+  
+## Evolutions possible
 
-
+* activer / désactiver certains réseaux sociaux
+* ajouter des réseaux sociaux directement depuis le panneau de configuration
 
