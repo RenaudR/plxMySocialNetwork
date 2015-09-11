@@ -57,8 +57,8 @@ class plxMySocialNetwork extends plxPlugin {
 
 
 
-		echo "	<div class=\"social-network\"><ul>";
-		echo "<span class=\"share\">Partager cet article: </span> ";
+		echo "<div class=\"social-network\"><span class=\"share\">Partager cet article: </span><ul>";
+	
 		// Twitter
 		echo "<li><a  title=\"Partager sur Twitter\"  class=\"twitter\" href=\"https://twitter.com/share?url={$url}&text={$title}\" {$onclick} target=\"_blank\" rel=\"nofollow\" ><span>Partager sur Twitter</span></a></li>";								
 		//Facebook
