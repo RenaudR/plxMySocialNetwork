@@ -1,2 +1,8 @@
+## Version 1.1 (06/09/2015) ##
+Ajout d'un formulaire pour ajouter les réseaux sociaux
+Possibiliter d'activer/désactiver individuellement chacun des liens
+Modification CSS par défaut
+Ajout de réseaux sociaux à l'activation
+
 ## Version 1.0 (06/09/2015) ##
 version initiale
