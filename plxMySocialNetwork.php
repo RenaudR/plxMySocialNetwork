@@ -3,7 +3,7 @@
  /**
  * Plugin plxMySocialNetwork by nIQnutn
  * Update: 21 september 2015
- * Version:	1.1
+ * Version:	1.2
  * 
  * Forked from aplxSocialImg by aruhuno on 06 september 2015
  **/
