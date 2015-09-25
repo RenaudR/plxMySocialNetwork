@@ -4,7 +4,7 @@
 <?php
 
 // nb de liens max
-$maxItems= 5; 
+$maxItems= 10; 
 
 
 # Control du token du formulaire
