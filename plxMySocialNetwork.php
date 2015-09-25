@@ -104,13 +104,13 @@ class plxMySocialNetwork extends plxPlugin {
 			$this->setParam('9-param2', '1', 'string');
 			$this->setParam('9-param3', 'http://pinterest.com/pin/create/button/?url={$url}', 'cdata');
 			$this->setParam('9-param4', 'Partager sur Pinterest', 'cdata');
-			$this->setParam('9-param5', 'Pinterest', 'cdata');	
+			$this->setParam('9-param5', 'pinterest', 'cdata');	
 						
 			$this->setParam('10-param1', 'Pocket', 'cdata');
 			$this->setParam('10-param2', '1', 'string');
 			$this->setParam('10-param3', 'https://getpocket.com/save?url={$url}&title={$title}', 'cdata');
 			$this->setParam('10-param4', 'Partager sur Pocket', 'cdata');
-			$this->setParam('10-param5', 'Pocket', 'cdata');	
+			$this->setParam('10-param5', 'pocket', 'cdata');	
 									
 		$this->saveParams();		
 		
