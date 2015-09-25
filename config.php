@@ -81,7 +81,7 @@ exit;
 				} 
 				?>
 
-			<tr><td colspan="4"><div id="help">
+			<tr><td colspan="5"><div id="help">
 			<ul>
 			<li>Nom: nom du r&eacute;seau social</li>
 			<li>Active: activer/d&eacute;sactiver le widget</li>
