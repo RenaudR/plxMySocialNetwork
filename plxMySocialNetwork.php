@@ -82,6 +82,17 @@ class plxMySocialNetwork extends plxPlugin {
 			$this->setParam('5-param4', 'Partager sur Diaspora', 'cdata');
 			$this->setParam('5-param5', 'diaspora', 'cdata');
 
+			$this->setParam('6-param1', 'Reddit', 'cdata');
+			$this->setParam('6-param2', '1', 'string');
+			$this->setParam('6-param3', 'http://www.reddit.com/submit?url={$url}&title={$title}', 'cdata');
+			$this->setParam('6-param4', 'Partager sur Reddit', 'cdata');
+			$this->setParam('6-param5', 'reddit', 'cdata');
+			
+			$this->setParam('7-param1', 'StumbleUpon', 'cdata');
+			$this->setParam('7-param2', '1', 'string');
+			$this->setParam('7-param3', 'http://www.stumbleupon.com/submit?url={$url}&title={$title}', 'cdata');
+			$this->setParam('7-param4', 'Partager sur StumbleUpon', 'cdata');
+			$this->setParam('7-param5', 'stumbleupon', 'cdata');		
 		$this->saveParams();		
 		
 	}
