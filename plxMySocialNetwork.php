@@ -92,7 +92,26 @@ class plxMySocialNetwork extends plxPlugin {
 			$this->setParam('7-param2', '1', 'string');
 			$this->setParam('7-param3', 'http://www.stumbleupon.com/submit?url={$url}&title={$title}', 'cdata');
 			$this->setParam('7-param4', 'Partager sur StumbleUpon', 'cdata');
-			$this->setParam('7-param5', 'stumbleupon', 'cdata');		
+			$this->setParam('7-param5', 'stumbleupon', 'cdata');	
+
+			$this->setParam('8-param1', 'Tumblr', 'cdata');
+			$this->setParam('8-param2', '1', 'string');
+			$this->setParam('8-param3', 'http://www.tumblr.com/share?v=3&u={$url}&t={$title}', 'cdata');
+			$this->setParam('8-param4', 'Partager sur Tumblr', 'cdata');
+			$this->setParam('8-param5', 'tumblr', 'cdata');	
+
+			$this->setParam('9-param1', 'Pinterest', 'cdata');
+			$this->setParam('9-param2', '1', 'string');
+			$this->setParam('9-param3', 'http://pinterest.com/pin/create/button/?url={$url}', 'cdata');
+			$this->setParam('9-param4', 'Partager sur Pinterest', 'cdata');
+			$this->setParam('9-param5', 'Pinterest', 'cdata');	
+						
+			$this->setParam('10-param1', 'Pocket', 'cdata');
+			$this->setParam('10-param2', '1', 'string');
+			$this->setParam('10-param3', 'https://getpocket.com/save?url={$url}&title={$title}', 'cdata');
+			$this->setParam('10-param4', 'Partager sur Pocket', 'cdata');
+			$this->setParam('10-param5', 'Pocket', 'cdata');	
+									
 		$this->saveParams();		
 		
 	}
