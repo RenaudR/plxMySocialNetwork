@@ -2,8 +2,8 @@
 
  /**
  * Plugin plxMySocialNetwork by nIQnutn
- * Update: 25 september 2015
- * Version: 1.3
+ * Update: 26 september 2015
+ * Version: 1.4
  * 
  * Forked from aplxSocialImg by aruhuno on 06 september 2015
  **/
@@ -26,8 +26,7 @@ class plxMySocialNetwork extends plxPlugin {
 		$this-> setConfigProfil(PROFIL_ADMIN);		
 
 		# déclaration des hooks
-		$this->addHook('MySocialNetworkArticle', 'MySocialNetworkArticle');
-		$this->addHook('MySocialNetworkStatic', 'MySocialNetworkStatic');
+		$this->addHook('MySocialNetwork', 'MySocialNetwork');
 	}
 
 
@@ -100,11 +99,11 @@ class plxMySocialNetwork extends plxPlugin {
 			$this->setParam('8-param4', 'Partager sur Tumblr', 'cdata');
 			$this->setParam('8-param5', 'tumblr', 'cdata');	
 
-			$this->setParam('9-param1', 'Pinterest', 'cdata');
+			$this->setParam('9-param1', 'Delicious', 'cdata');
 			$this->setParam('9-param2', '1', 'string');
-			$this->setParam('9-param3', 'http://pinterest.com/pin/create/button/?url={$url}', 'cdata');
-			$this->setParam('9-param4', 'Partager sur Pinterest', 'cdata');
-			$this->setParam('9-param5', 'pinterest', 'cdata');	
+			$this->setParam('9-param3', 'http://del.icio.us/post?url={$url}&title={$title}', 'cdata');
+			$this->setParam('9-param4', 'Partager sur Delicious', 'cdata');
+			$this->setParam('9-param5', 'delicious', 'cdata');	
 						
 			$this->setParam('10-param1', 'Pocket', 'cdata');
 			$this->setParam('10-param2', '1', 'string');
@@ -119,30 +118,53 @@ class plxMySocialNetwork extends plxPlugin {
 	
 	
 	/**
-	* Méthode qui affiche les boutons des réseaux sociaux sur un article
+	* Méthode qui affiche les liens
 	*
 	* @author	Stephane F, aruhuno, nIQnutn
 	**/
-	public function MySocialNetworkArticle() {
-		
+	public function MySocialNetwork() {
+
 		$plxShow = plxShow::getInstance(); // permet l'utilisation de plxShow
 		$onclick = "onclick=\"javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes');return false;\"";
-				
-		/* Récupération de l'URL */
-		$url = "?article".$plxShow->artId();
-		$url = $plxShow->plxMotor->urlRewrite($url);
+	
+		$url="";
+		$title="";
+		
+		// Test article ?? page statique
+		if($plxShow->mode()=='article')
+			{
+				/* Récupération de l'URL */
+				$url = "?article".$plxShow->artId();
+				$url = $plxShow->plxMotor->urlRewrite($url);
 
-		/* Gestion du titre */
-		ob_start();
-		$plxShow->artTitle();
-		$title = rawurlencode(ob_get_clean());
+				/* Gestion du titre */
+				ob_start();
+				$plxShow->artTitle();
+				$title = rawurlencode(ob_get_clean());
+				
+				$label = $this->getParam('share-article');
+			}
+		
+		elseif($plxShow->mode()=='static')
+			{				
+				/* Récupération de l'URL */
+				$url = "?static".$plxShow->staticId();
+				$url = $plxShow->plxMotor->urlRewrite($url);
+
+				/* Gestion du titre */
+				ob_start();
+				$plxShow->staticTitle();
+				$title = ob_get_clean();
+				
+				$label = $this->getParam('share-page');
+			}					
 
 		/* Remplacement du motif {$url} et {$title} par l'URL et le titre de l'article */
 		$pattern = array("{\$url}","{\$title}");
 		$urlTitle   = array($url, $title);
 
-
-		echo "<div class=\"social-network\"><span class=\"share\">". $this->getParam('share-article')."</span><ul>";
+ 
+		echo "<div class=\"social-network\"><span class=\"share\">". $label ."</span><ul>";
 		
 		for  ($i = 1; $i <= $this->getParam('maxItems') ; $i++) 
 			{	
@@ -164,49 +186,6 @@ class plxMySocialNetwork extends plxPlugin {
 
 
 
-	/**
-	* Méthode qui affiche les boutons sociaux sur une page statique
-	*
-	* @author	Stephane F, aruhuno, nIQnutn
-	**/
-	public function MySocialNetworkStatic() {
-				
-		$plxShow = plxShow::getInstance(); // permet l'utilisation de plxShow
-		$onclick = "onclick=\"javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes');return false;\"";
-		
-		/* Récupération de l'URL */
-		$url = "?static".$plxShow->staticId();
-		$url = $plxShow->plxMotor->urlRewrite($url);
-
-		/* Gestion du titre */
-		ob_start();
-		$plxShow->staticTitle();
-		$title = ob_get_clean();
-
-		/* Remplacement du motif {$url} et {$title} par l'URL et le titre de la page statique */
-		$pattern = array("{\$url}","{\$title}");
-		$urlTitle   = array($url, $title);
-
-
-		echo "<div class=\"social-network\"><span class=\"share\">". $this->getParam('share-page') ."</span><ul>";
-
-		for  ($i = 1; $i <= $this->getParam('maxItems') ; $i++) 
-			{	
-				if ($this->getParam($i.'-param2')=="1")
-					{
-							if (($this->getParam($i.'-param3')) != "" )
-								{ 
-									echo "<li><a  title=\"".$this->getParam($i.'-param4')."\"  class=\"".$this->getParam($i.'-param5')."\" href=\"".str_replace($pattern, $urlTitle,  $this->getParam($i."-param3"))."\" {$onclick} target=\"_blank\" rel=\"nofollow\" ><span>".$this->getParam($i.'-param4')."</span></a></li>";								
-								}    
-					}
-			}
-			
-		if ($this->getParam('mail-param2')=="1"){
-		echo "<li><a  title=\"".$this->getParam('mail-param4')."\"  class=\"".$this->getParam('mail-param5')."\" href=\"".str_replace($pattern, $urlTitle,  $this->getParam("mail-param3"))."\"  target=\"_blank\" rel=\"nofollow\" ><span>".$this->getParam('mail-param4')."</span></a></li>";								
-		}			
-			
-		echo "</ul></div>";	
-	}
 }
 ?>
 
