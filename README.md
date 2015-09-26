@@ -14,17 +14,12 @@ plxMySocialNetwork (fork de aplxSocialImg) : partager vos articles sur les rése
 * Pas de code tiers
 
 
-## Ajouter plxMySocialNetwork
+## Insérer plxMySocialNetwork le thème utilisé
 
-Pour ajouter les boutons dans votre page, éditer les fichiers depuis *Options d'affichage* > *Choix du thème* > *  Éditer les fichiers du thème «defaut»*
+Dans le fichier article.php,article-full-width.php et/ou static.php, static-full-width.php de votre thème, ajoutez la ligne suivante à l'endroit où vous souhaitez afficher les boutons.
 
-Sur une page statique (static.php ou static-full-width.php) ajouter la ligne suivante à l'endroit où vous souhaitez afficher les boutons.
 
-    <?php eval($plxShow->callHook('MySocialNetworkStatic')) ?>
-    
-Sur une page article (article.php ou article-full-width.php) ajouter la ligne suivante à l'endroit où vous souhaitez afficher les boutons.
-
-    <?php eval($plxShow->callHook('MySocialNetworkArticle')) ?>
+    <?php eval($plxShow->callHook('MySocialNetwork')) ?>
 
 
 ## Modifier le CSS
