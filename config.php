@@ -81,7 +81,7 @@ exit;
 				} 
 				?>
 
-			<tr><td colspan="4"><div id="help">
+			<tr><td colspan="5"><div id="help">
 
 			<p><?php  $plxPlugin->lang('L_PATTERN_URL') ?><br />
 			   <?php  $plxPlugin->lang('L_FORM_URL') ?>: <code>https://twitter.com/share?url={$url}&amp;text={$title}</code><br />
