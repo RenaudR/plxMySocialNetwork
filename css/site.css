@@ -1,48 +1,60 @@
-.social-network 
-li {
-
+.social-network li {
 	display: inline-block;
-	margin-left:  0.25em;
+	margin-left:0.25em;
 	padding: 0 3px;
-		background-color: #F2F2F2;
-		border: solid 1px  #CCC ;
-	border-radius: 8px;
+
 }
 
-.social-network 
-li 
-a  {
-width: 1.28571em;
-text-align: center;
-display: inline-block;
-text-decoration:none;
-
+.social-network li a{
+	width: 1.28571em;
+	text-align: center;
+	display: inline-block;
+	text-decoration:none;
 }
 
 .social-network li a:hover{
-color: #555;
-font-weight:bold;}
-
-.social-network 
-span
-{
-display:none;
+	color: #555;
+	font-weight:bold;
 }
 
-.social-network   
-span.share 
-{
-display:initial;
+.social-network span{
+	display:none;
 }
 
-.social-network .twitter:before {font-family: FontAwesome;content: "\f099";}
-.social-network .facebook:before {font-family: FontAwesome;content: "\f09a";}
-.social-network .google-plus:before {font-family: FontAwesome;content: "\f0d5";}
-.social-network .linkedin:before {font-family: FontAwesome;content: "\f0e1";}
-.social-network .diaspora:before {font-family: FontAwesome;content: "\f069";}
-.social-network .courriel:before {font-family: FontAwesome;content: "\f003";}
-.social-network .reddit:before {font-family: FontAwesome;content: "\f1a1";}
-.social-network .stumbleupon:before {font-family: FontAwesome;content: "\f1a4";}
-.social-network .tumblr:before {font-family: FontAwesome;content: "\f173";}
-.social-network .pinterest:before {font-family: FontAwesome;content: "\f231";}
-.social-network .pocket:before {font-family: FontAwesome;content: "\f265";}
+.social-network span.share {
+	display:initial;
+}
+
+/*  images  */
+.social-network li a:hover { border-radius: 0.7em; }
+.social-network li a.twitter { background: url("../plugins/plxMySocialNetwork/img/twitter.svg") center no-repeat; width: 32px; height: 32px; display: inline-block }
+.social-network li a.facebook { background: url("../plugins/plxMySocialNetwork/img/facebook.svg") center no-repeat; width: 32px; height: 32px; display: inline-block }
+.social-network li a.google-plus { background: url("../plugins/plxMySocialNetwork/img/google-plus.svg") center no-repeat; width: 32px; height: 32px; display: inline-block }
+.social-network li a.linkedin { background: url("../plugins/plxMySocialNetwork/img/linkedin.svg") center no-repeat; width: 32px; height: 32px; display: inline-block }
+.social-network li a.diaspora { background: url("../plugins/plxMySocialNetwork/img/diaspora.svg") center no-repeat; width: 32px; height: 32px; display: inline-block }
+.social-network li a.courriel { background: url("../plugins/plxMySocialNetwork/img/mail.svg") center no-repeat; width: 32px; height: 32px; display: inline-block }
+.social-network li a.reddit { background: url("../plugins/plxMySocialNetwork/img/reddit.svg") center no-repeat; width: 32px; height: 32px; display: inline-block }
+.social-network li a.stumbleupon { background: url("../plugins/plxMySocialNetwork/img/stumbleupon.svg") center no-repeat; width: 32px; height: 32px; display: inline-block }
+.social-network li a.tumblr { background: url("../plugins/plxMySocialNetwork/img/tumblr.svg") center no-repeat; width: 32px; height: 32px; display: inline-block }
+.social-network li a.delicious { background: url("../plugins/plxMySocialNetwork/img/delicious.svg") center no-repeat; width: 32px; height: 32px; display: inline-block }
+.social-network li a.pocket { background: url("../plugins/plxMySocialNetwork/img/pocket.svg") center no-repeat; width: 32px; height: 32px; display: inline-block }
+.social-network li a.share-alt { background: url("../plugins/plxMySocialNetwork/img/share-alt.svg") center no-repeat; width: 32px; height: 32px; display: inline-block }
+/* */
+
+
+
+/* icons  font-awesome 
+.social-network li {	background-color: #F2F2F2;	border: solid 1px#CCC ;	border-radius: 8px; }
+.social-network .twitter:before 		{	font-family: FontAwesome;	content: "\f099"; }
+.social-network .facebook:before 		{	font-family: FontAwesome;	content: "\f09a";}
+.social-network .google-plus:before 	{	font-family: FontAwesome;	content: "\f0d5";}
+.social-network .linkedin:before 		{	font-family: FontAwesome;	content: "\f0e1";}
+.social-network .diaspora:before 		{	font-family: FontAwesome;	content: "\f069";}
+.social-network .courriel:before 		{	font-family: FontAwesome;	content: "\f003";}
+.social-network .reddit:before 		{	font-family: FontAwesome;	content: "\f1a1";}
+.social-network .stumbleupon:before 	{	font-family: FontAwesome;	content: "\f1a4";}
+.social-network .tumblr:before 		{	font-family: FontAwesome;	content: "\f173";}
+.social-network .delicious:before		 {	font-family: FontAwesome;	content: "\f1a5";}
+.social-network .pocket:before 		{	font-family: FontAwesome;	content: "\f265";}
+.social-network .lnk-0:before 		{	font-family: FontAwesome;	content: "\f265";}
+ */
