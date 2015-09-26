@@ -47,7 +47,7 @@ exit;
 <h2><?php  $plxPlugin->lang('L_MANAGE_PLUGIN') ?></h2>
 <form class="inline-form" action="parametres_plugin.php?p=plxMySocialNetwork" method="post" id="form_test">
 	
-	<table class="table">
+	<table class="table full-width">
 	<caption><?php  $plxPlugin->lang('L_SOCIAL_NETWORK') ?></caption>
 		<thead>
 			<tr>
@@ -96,7 +96,7 @@ exit;
 	</table>
 	
 	
-	<table class="table">
+	<table class="table full-width">
 	<caption><?php  $plxPlugin->lang('L_EMAIL') ?></caption>
 		<thead>
 			<tr>
@@ -131,7 +131,7 @@ exit;
 		</table>
 		
 		
-	<table class="table">
+	<table class="table full-width">
 	<caption>Autres param&egrave;tres</caption>
 		<thead>
 			<tr>
