@@ -9,7 +9,7 @@
 		'L_ACTIVE'		=>	'Active',
 		'L_ACTIVE_HELP'	=>	'Activer / Désactiver le lien',
 		'L_URL'			=>	'URL',
-		'L_URL_HELP'		=>	'URL complète du lien pour partager le l\'article / page statique',
+		'L_URL_HELP'		=>	'URL complète du lien pour partager l\'article / page statique',
 		'L_DESCRIPTION'	=>	'Description',
 		'L_DESCRIPTION_HELP'=>	'Description qui sera afficher pour le lien et infobulle',
 		'L_CLASS'			=>	'CSS class',
