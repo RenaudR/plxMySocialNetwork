@@ -47,6 +47,7 @@ exit;
 <h2><?php  $plxPlugin->lang('L_MANAGE_PLUGIN') ?></h2>
 <form class="inline-form" action="parametres_plugin.php?p=plxMySocialNetwork" method="post" id="form_test">
 	
+	<div class="scrollable-table">
 	<table class="table full-width">
 	<caption><?php  $plxPlugin->lang('L_SOCIAL_NETWORK') ?></caption>
 		<thead>
@@ -94,8 +95,9 @@ exit;
 		</tbody>
 		
 	</table>
+	</div>
 	
-	
+	<div class="scrollable-table">
 	<table class="table full-width">
 	<caption><?php  $plxPlugin->lang('L_EMAIL') ?></caption>
 		<thead>
@@ -128,9 +130,10 @@ exit;
 				<td colspan="4"><?php plxUtils::printInput('mail-param8',$plxPlugin->getParam('mail-param8'),'text','80-255') ?></td>
 			</tr>
 		</tbody>
-		</table>
-		
-		
+	</table>
+	</div>
+	
+	<div class="scrollable-table">	
 	<table class="table full-width">
 	<caption>Autres param&egrave;tres</caption>
 		<thead>
@@ -154,7 +157,8 @@ exit;
 				<td><?php plxUtils::printInput('share-page',$plxPlugin->getParam('share-page'),'text','35-100') ?></td>
 			</tr>
 		</tbody>
-		</table>
+	</table>
+	</div>
 		
 <p class="in-action-bar"><?php echo plxToken::getTokenPostMethod() ?><input type="submit" name="submit" value="<?php  $plxPlugin->lang('L_SAVE_CONFIG') ?>" /></p>
 
