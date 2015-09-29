@@ -1,22 +1,21 @@
 <?php
-
  /**
  * Plugin plxMySocialNetwork by nIQnutn
- * Update: 26 september 2015
- * Version: 1.4
+ * Update: 29 september 2015
+ * Version: 1.5
  * 
  * Forked from aplxSocialImg by aruhuno on 06 september 2015
  **/
-
-
 class plxMySocialNetwork extends plxPlugin {
 
+
 	/**
-	 * Constructeur de la classe plxMySocialNetwork
+	 * Constructeur de la classe 
 	 *
-	 * @author	 nIQnutn
+	 * @param	default_lang	langue par défaut
+	 * @return	stdio
+	 * @author	nIQnutn
 	 **/
-	 
 	public function __construct($default_lang) {
 
 		# appel du constructeur de la classe plxPlugin (obligatoire)
@@ -24,6 +23,7 @@ class plxMySocialNetwork extends plxPlugin {
 		
 		# limite l'accès à l'écran d'administration du plugin
 		$this-> setConfigProfil(PROFIL_ADMIN);		
+
 
 		# déclaration des hooks
 		$this->addHook('MySocialNetwork', 'MySocialNetwork');
@@ -114,9 +114,6 @@ class plxMySocialNetwork extends plxPlugin {
 		$this->saveParams();		
 		
 	}
-
-	
-	
 	/**
 	* Méthode qui affiche les liens
 	*
@@ -184,8 +181,9 @@ class plxMySocialNetwork extends plxPlugin {
 		echo "</ul></div>";			
 	}
 
+	
 
 
 }
-?>
 
+?>
