@@ -3,8 +3,7 @@ plxMySocialNetwork (fork de aplxSocialImg) : partager vos articles sur les rése
 
 ![demo](https://cloud.githubusercontent.com/assets/13441278/10242180/527d3188-68ef-11e5-9ae4-cd4ebb8be4d2.png)
 
-avec font-awesome:
-![font-awesome](https://cloud.githubusercontent.com/assets/13441278/10242181/527e8ae2-68ef-11e5-990c-4f2145616495.png)
+
 
 ## Fonctionnalités
 
@@ -27,6 +26,11 @@ Dans le fichier article.php,article-full-width.php et/ou static.php, static-full
 ## Modifier le CSS
 
 Paramètres > Plugins > menu "Plugins actifs" > plugin "MySocialNetwork" > menu "Code css" > champ "Contenu fichier css site"
+
+
+avec font-awesome:
+
+![font-awesome](https://cloud.githubusercontent.com/assets/13441278/10242181/527e8ae2-68ef-11e5-990c-4f2145616495.png)
   
 ## Modifier le nombre de liens maximum
 
