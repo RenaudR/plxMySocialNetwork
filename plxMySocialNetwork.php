@@ -101,7 +101,7 @@ class plxMySocialNetwork extends plxPlugin {
 
 			$this->setParam('9-param1', 'Delicious', 'cdata');
 			$this->setParam('9-param2', '1', 'string');
-			$this->setParam('9-param3', 'http://del.icio.us/post?url={$url}&title={$title}', 'cdata');
+			$this->setParam('9-param3', 'https://delicious.com/save?v=5?url={$url}&title={$title}', 'cdata');
 			$this->setParam('9-param4', 'Partager sur Delicious', 'cdata');
 			$this->setParam('9-param5', 'delicious', 'cdata');	
 						
@@ -133,9 +133,9 @@ class plxMySocialNetwork extends plxPlugin {
 				/* Récupération de l'URL */
 				$url = "?article".$plxShow->artId();
 				$url = $plxShow->plxMotor->urlRewrite($url);
-
+        			$url = rawurlencode($url);
+            
 				/* Gestion du titre */
-				ob_start();
 				$plxShow->artTitle();
 				$title = rawurlencode(ob_get_clean());
 				
@@ -147,9 +147,9 @@ class plxMySocialNetwork extends plxPlugin {
 				/* Récupération de l'URL */
 				$url = "?static".$plxShow->staticId();
 				$url = $plxShow->plxMotor->urlRewrite($url);
-
+		        	$url = rawurlencode($url);
+		        	
 				/* Gestion du titre */
-				ob_start();
 				$plxShow->staticTitle();
 				$title = ob_get_clean();
 				
