@@ -44,17 +44,17 @@
 
 
 /* icons  font-awesome 
-.social-network li {	background-color: #F2F2F2;	border: solid 1px#CCC ;	border-radius: 8px; }
+.social-network li 		{	background-color: #F2F2F2;	border: solid 1px#CCC ;	border-radius: 8px; }
 .social-network .twitter:before 		{	font-family: FontAwesome;	content: "\f099"; }
 .social-network .facebook:before 		{	font-family: FontAwesome;	content: "\f09a";}
-.social-network .google-plus:before 	{	font-family: FontAwesome;	content: "\f0d5";}
+.social-network .google-plus:before 		{	font-family: FontAwesome;	content: "\f0d5";}
 .social-network .linkedin:before 		{	font-family: FontAwesome;	content: "\f0e1";}
 .social-network .diaspora:before 		{	font-family: FontAwesome;	content: "\f069";}
 .social-network .courriel:before 		{	font-family: FontAwesome;	content: "\f003";}
-.social-network .reddit:before 		{	font-family: FontAwesome;	content: "\f1a1";}
-.social-network .stumbleupon:before 	{	font-family: FontAwesome;	content: "\f1a4";}
-.social-network .tumblr:before 		{	font-family: FontAwesome;	content: "\f173";}
-.social-network .delicious:before		 {	font-family: FontAwesome;	content: "\f1a5";}
-.social-network .pocket:before 		{	font-family: FontAwesome;	content: "\f265";}
-.social-network .lnk-0:before 		{	font-family: FontAwesome;	content: "\f265";}
+.social-network .reddit:before 			{	font-family: FontAwesome;	content: "\f1a1";}
+.social-network .stumbleupon:before 		{	font-family: FontAwesome;	content: "\f1a4";}
+.social-network .tumblr:before 			{	font-family: FontAwesome;	content: "\f173";}
+.social-network .delicious:before		{	font-family: FontAwesome;	content: "\f1a5";}
+.social-network .pocket:before 			{	font-family: FontAwesome;	content: "\f265";}
+.social-network .share-alt:before 		{	font-family: FontAwesome;	content: "\f1e0";}
  */
