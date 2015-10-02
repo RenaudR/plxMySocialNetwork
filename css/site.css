@@ -40,12 +40,11 @@
 .social-network li a.delicious 		{ background: url("../plugins/plxMySocialNetwork/img/delicious.svg") 	center no-repeat; width: 32px; height: 32px; background-size: 32px 32px;  display: inline-block }
 .social-network li a.pocket 		{ background: url("../plugins/plxMySocialNetwork/img/pocket.svg") 	center no-repeat; width: 32px; height: 32px; background-size: 32px 32px;  display: inline-block }
 .social-network li a.share-alt 		{ background: url("../plugins/plxMySocialNetwork/img/share-alt.svg") 	center no-repeat; width: 32px; height: 32px; background-size: 32px 32px;  display: inline-block }
-
 /*    */
 
 /*
 .social-network li 				{	padding: 0 3px; background-color: #F2F2F2;	border: solid 1px#CCC ;	border-radius: 8px; }
-.social-network li a				{	width: 1.28571em; text-align: center;	display: inline-block;	text-decoration:none;}
+.social-network li a				{	width: 1.28571em; text-align: center;	display: inline-block;	}
 .social-network .twitter:before 		{	font-family: FontAwesome;	content: "\f099"; }
 .social-network .facebook:before 		{	font-family: FontAwesome;	content: "\f09a";}
 .social-network .google-plus:before 		{	font-family: FontAwesome;	content: "\f0d5";}
