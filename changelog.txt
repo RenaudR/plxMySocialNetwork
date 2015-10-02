@@ -1,3 +1,10 @@
+## Version 1.5 (02/10/2015) ##
+correction bug flux RSS
+suppression suppression  ob_start(); 
+ajout rawurlencode($url)
+modification service Delicious
+
+
 ## Version 1.4 (26/09/2015) ##
 modification avec un seul hook pour gérer les articles et pages statiques
 ajout CSS avec images
