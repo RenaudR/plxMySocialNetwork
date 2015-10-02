@@ -26,7 +26,7 @@
 }
 
 /*  images  */
-.social-network li a{	filter: brightness(50%);	-webkit-filter: brightness(50%);	-moz-filter: brightness(50%);	-o-filter: brightness(50%);	-ms-filter: brightness(50%); }
+.social-network li a{	 border-radius: 0.33em;   filter: brightness(50%);	-webkit-filter: brightness(50%);	-moz-filter: brightness(50%);	-o-filter: brightness(50%);	-ms-filter: brightness(50%); }
 .social-network li a:hover{	filter: brightness(100%);	-webkit-filter: brightness(100%);	-moz-filter: brightness(100%);	-o-filter: brightness(100%);	-ms-filter: brightness(100%); }
 .social-network li a.twitter { background: url("../plugins/plxMySocialNetwork/img/twitter.svg") center no-repeat; width: 32px; height: 32px; display: inline-block }
 .social-network li a.facebook { background: url("../plugins/plxMySocialNetwork/img/facebook.svg") center no-repeat; width: 32px; height: 32px; display: inline-block }
