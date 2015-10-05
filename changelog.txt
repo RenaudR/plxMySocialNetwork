@@ -1,6 +1,6 @@
 ## Version 1.5 (02/10/2015) ##
 correction bug flux RSS
-suppression suppression  ob_start(); 
+suppression ob_start(); 
 ajout rawurlencode($url)
 modification service Delicious
 
